@@ -1,9 +1,14 @@
+*{box-sizing: border-box;}
+
 body{
     background-image: url(../img/Logo.png);
     background-position: center;
     background-repeat: no-repeat;
 }
-
+li{
+    list-style: none;
+    text-decoration: none;
+}
 .isologo{
     border-radius: 50%;
 }
@@ -17,7 +22,6 @@ body{
     align-items: center;
     
 }
-
 
 .h1titulo{
     text-align: center;
