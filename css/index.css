@@ -1,10 +1,12 @@
 body{
-    background-image: url(../img/plantilla-diseno-logotipo-onda-musica-audio-simple_605910-914.avif);
+    background-image: url(../img/Logo.png);
     background-position: center;
     background-repeat: no-repeat;
 }
 
-
+.isologo{
+    border-radius: 50%;
+}
 
 .listamenu{
     font-weight: bold;
