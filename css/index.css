@@ -8,6 +8,14 @@ body{
 li{
     list-style: none;
 }
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .inicio{
     display: flex;
     flex-direction: row;
@@ -31,8 +39,10 @@ section{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content:space-between;
     margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 .ultimo{
     justify-content: center;
