@@ -2,9 +2,7 @@
     box-sizing: border-box;
     width: fit-content;
 }
-body{
-    background-color: black;
-}
+
 li{
     list-style: none;
 }
@@ -68,4 +66,15 @@ section{
 .img{
     height: 150;
     width: 200px;
+}
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
