@@ -61,6 +61,8 @@ section{
     text-align: center;
     align-items: center;
     align-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .img{
     height: 150;
