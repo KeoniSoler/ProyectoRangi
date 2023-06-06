@@ -1,10 +1,12 @@
-function togglemode() {
+
+
+function cambiarModo() {
 if (document.body.classList.contains('dark-mode')){
-    enableLightMode();
+    modoClaro();
     preferredMode = 'light-mode'
 }
 else{
-    enableDarkMode();
+    modoOscuro();
     preferredMode = 'dark-mode' 
 }
 localStorage.setItem('preferredMode', preferredMode)
