@@ -8,20 +8,21 @@
     <link rel="stylesheet" href="./css/index.css">
     <title>ProyectoFinal</title>
 </head>
-<body>
-<header>
-    <section class="inicio">
-            <img src="./img/logo.png" alt="logo" class="logo">
-        <nav class="nav">
-            <ul class="ul-menu">
-                <li id="home"><a href="./home.html">Home</a></li>
-                <li id="hyf"><a href="./hyf.html">Haeder&Footer</a></li>
-                <li id="resultados"><a href="./resultados.html">Resultados</a></li>
-                <li id=""><a href="./search.html">Buscador</a></li>
-            </ul>
-        </nav>
-        <button id="modo-oscuro"></button>
-    </section>
+<body class="body">
+<header class="header">
+    <div class="form">
+<h2 class="titulo-Ringo">Ringo</h2>
+<div><a href="home.html"><img src="./img/logo.png" alt="" class="logo-ringomusic"></a>
+</div>
+<form action="search.html" method="get" class="search">
+    <input type="text" name="buscar" placeholder="Buscar en RingoMusic" class="buscador-texto">
+</form>
+    </div>
+    <nav class="nav">
+        <a href="home.html">HOME</a>
+        <a href="playlists.html">PLAYLISTS</a>
+        <a href="generos.html">GENEROS</a>
+    </nav>
 </header>
 <main>
     <section class="menu">
@@ -56,19 +57,11 @@
 </section>
 </div> 
 </main>
-<footer>
-    <section>
-        <nav>
-        <ul class="ultimo">
-            <li class="nombres">Details</li>
-            <li class="nombres">Keoni Soler</li>
-            <li></li>
-            <li class="nombres">Santiago Legarre</li>
-            <li></li>
-            <li class="nombres">Matteo Agramonte</li>
-        </ul>
-    </nav>
-</section>
+<footer class="footer">
+  <div>
+    <img src="./img/logo.png" alt="" class="logo-footer">
+  </div>
+  <p class="p-footer"> Santiago Legarre | Keoni Soler | Matteo Agramonte <br> TP PROGRAMACION</p>
 </footer>
     <script src="./js/home.js"></script>
 </body>

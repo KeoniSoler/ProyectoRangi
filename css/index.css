@@ -2,28 +2,83 @@
     box-sizing: border-box;
     width: fit-content;
 }
-
 li{
     list-style: none;
 }
-
-.nav{
+body{
+    background-image: url(../img/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.header{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: burlywood;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
+}
+.footer{
+    color: burlywood;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+.logo-footer{
+    height: 90px;
+    width: 170px;
+}
+.p-footer{
+    font-size: small;
+}
+.nav{
+padding: 10px 30px;
+text-decoration: none;
+}
+.form{
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.titulo-Ringo{
+    margin-right: 75px;
+}
+.logo-ringomusic{
+    width: 250px;
+    height: 120px;
+    align-items: center;
+    padding-bottom: 25px;
+}
+.search{
+    background-color: grey;
+    color: black;
+    height: 20px;
+    padding: 8px;
+    border-radius: 20px;
+}
+.buscador-texto{
+    border: none;
+    background-color: none;
+    outline: none;
+    color: black;
+    font-size: 15px;
+}
+a:link{
+color: burlywood;
+}
+a:visited{
+    color: burlywood;   
 }
 
-.inicio{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-}
-.logo{
-    height: 80px;
-    width: 120px;
-}
 .menu{
     display: flex;
     flex-direction: column;
@@ -78,4 +133,7 @@ section{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+#modo-oscuro{
+    background-image: url(../img/logodarkmode.png);
 }
