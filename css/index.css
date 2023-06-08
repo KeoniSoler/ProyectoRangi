@@ -1,4 +1,9 @@
+@media (max-width: 600px){
 
+}
+@media (min-width: 601px){
+    
+}
 li{
     list-style: none;
 }
@@ -17,22 +22,6 @@ body{
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-}
-.footer{
-    color: burlywood;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.logo-footer{
-    height: 150px;
-    width: 170px;
-}
-.p-footer{
-    font-size: small;
 }
 .header{
     font-family: Arial, Helvetica, sans-serif;
@@ -140,4 +129,20 @@ a:visited{
     flex-direction: column;
     margin: 30px 30px 30px 30px;
     width: 130px;
+}
+.footer{
+    color: burlywood;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-footer{
+    height: 150px;
+    width: 170px;
+}
+.p-footer{
+    font-size: small;
 }
