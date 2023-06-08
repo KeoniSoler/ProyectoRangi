@@ -11,7 +11,7 @@ fetch (url)
     for (let i = 1; i < info.data.length; i++){
         todoslosartistas +=
         `<article>
-        <img src= "${info.data[i].picture}" alt="" />
+        <img src= "${info.data[i].picture_medium}" alt="" />
         <p>Name:  ${info.data[i].name}  </p>
         </article>`
     }
