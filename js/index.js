@@ -1,11 +1,10 @@
-
 fetch (url)
 .then(function(response){
     return response.json ()
 })
 .then (function (info){
     console.log(info)
-    let genero = document.querySelector (".generos")
+    let genero = document.querySelector (".genero")
     let listageneros = []
     for (let i = 1; i < info.data.length; i++){
         listageneros +=

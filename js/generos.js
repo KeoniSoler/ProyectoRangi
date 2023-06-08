@@ -2,7 +2,7 @@ let url = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre"
 
 fetch (url)
 .then(function(response){
-    return response.json ()
+    return response.json()
 })
 .then (function (info){
     console.log(info.data)
