@@ -28,7 +28,7 @@ body{
     align-items: center;
 }
 .logo-footer{
-    height: 90px;
+    height: 150px;
     width: 170px;
 }
 .p-footer{
@@ -57,9 +57,9 @@ text-decoration: none;
 }
 .logo-ringomusic{
     width: 250px;
-    height: 120px;
+    height: 200px;
     align-items: center;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
 }
 .search{
     background-color: grey;
