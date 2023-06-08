@@ -1,12 +1,9 @@
-*{
-    box-sizing: border-box;
-    width: fit-content;
-}
+
 li{
     list-style: none;
 }
 body{
-    background-image: url(../img/background.jpeg);
+    background-image: url(../img/bg.avif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -58,9 +55,6 @@ text-decoration: none;
     justify-content: space-between;
     align-items: center;
 }
-.titulo-Ringo{
-    margin-right: 75px;
-}
 .logo-ringomusic{
     width: 250px;
     height: 120px;
@@ -73,6 +67,7 @@ text-decoration: none;
     height: 20px;
     padding: 8px;
     border-radius: 20px;
+    border: 2px solid black;
 }
 .buscador-texto{
     border: none;
@@ -81,73 +76,42 @@ text-decoration: none;
     color: black;
     font-size: 15px;
 }
+input.buscador-texto{
+    background-color: grey;
+    color: white;
+}
 a:link{
 color: burlywood;
 }
 a:visited{
     color: burlywood;   
 }
-
+.CancionTitulo{
+    color: burlywood;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.canciones{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   justify-content: space-between;
+}
+.cancionbox{
+    color: burlywood;
+    background-color: rgba(124, 124, 124, 0.3);
+    padding: 15px;
+    margin: 15px;
+    border: 3px solid rgba(96, 96, 96);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.CoverCancion{
+    height: 180px;
+    width: 180px;
+}
 .menu{
     display: flex;
     flex-direction: column;
     margin: 30px 30px 30px 30px;
     width: 130px;
-}
-
-ul-menu{
-    float: right;
-}
-
-section{
-    color: white;
-}
-.todo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-between;
-    margin-bottom: 20px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-.ultimo{
-    justify-content: center;
-    list-style: symbols();
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    justify-content: center ;
-    justify-items: center;
-    background-color: rgba(200, 0, 0, 0.169); 
-    border-top-right-radius: 300px;
-    border-top-left-radius: 300px;
-    padding: 20px;
-    padding-bottom: 20px;
-}
-.nombres{
-    display: block;
-    padding-top: 15px;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-.img{
-    height: 150;
-    width: 200px;
-}
-.contenedor{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-.centrado{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-#modo-oscuro{
-    background-image: url(../img/logodarkmode.png);
 }
