@@ -8,7 +8,7 @@ li{
     list-style: none;
 }
 body{
-    background-image: url(../img/bg.avif);
+    background-color: whitesmoke;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -58,13 +58,13 @@ text-decoration: none;
     border-radius: 20px;
     border: 2px solid black;
 }
-.buscador-texto{
+.buscadortexto{
     border: none;
     background-color: none;
     outline: none;
     font-size: 15px;
 }
-input.buscador-texto{
+input.buscadortexto{
     background-color: grey;
     color: white;
 }
@@ -89,10 +89,10 @@ a:visited{
 }
 .cancionbox{
     color: burlywood;
-    background-color: rgba(124, 124, 124, 0.3);
+    background-color: rgba(222, 184, 135, 0.152);
     padding: 15px;
     margin: 15px;
-    border: 3px solid rgba(96, 96, 96);
+    border: 3px solid rgb(195, 159, 111);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -113,10 +113,10 @@ a:visited{
 }
 .artistasbox{
     color: burlywood;
-    background-color: rgba(124, 124, 124, 0.3);
+    background-color:  rgba(222, 184, 135, 0.152);
     padding: 15px;
     margin: 15px;
-    border: 3px solid rgba(96, 96, 96);
+    border: 3px solid  rgb(195, 159, 111);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
