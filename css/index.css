@@ -73,11 +73,13 @@ text-decoration: none;
     border: none;
     background-color: none;
     outline: none;
-    color: black;
     font-size: 15px;
 }
 input.buscador-texto{
     background-color: grey;
+    color: white;
+}
+::placeholder{
     color: white;
 }
 a:link{
@@ -106,6 +108,30 @@ a:visited{
     font-family: Arial, Helvetica, sans-serif;
 }
 .CoverCancion{
+    height: 180px;
+    width: 180px;
+}
+
+.ArtistasTitulo{
+    color: burlywood;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.artistas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   justify-content: space-between;
+}
+.artistasbox{
+    color: burlywood;
+    background-color: rgba(124, 124, 124, 0.3);
+    padding: 15px;
+    margin: 15px;
+    border: 3px solid rgba(96, 96, 96);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.CoverArtistas{
     height: 180px;
     width: 180px;
 }
