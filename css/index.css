@@ -1,4 +1,9 @@
+@media (max-width: 600px){
 
+}
+@media (min-width: 601px){
+    
+}
 li{
     list-style: none;
 }
@@ -28,7 +33,6 @@ body{
     align-items: center;
 }
 .nav{
-
 padding: 10px 30px;
 text-decoration: none;
 }
@@ -38,7 +42,6 @@ text-decoration: none;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-
 }
 .logo-ringomusic{
     width: 250px;
@@ -69,7 +72,6 @@ input.buscadortexto{
 }
 a:link{
 color: burlywood;
-
 }
 a:visited{
     color: burlywood;   
@@ -142,4 +144,14 @@ a:visited{
 }
 .p-footer{
     font-size: small;
+}
+.titulogen{
+align-items: center;
+}
+.genero{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
