@@ -4,15 +4,15 @@ fetch (url)
 .then(function(response){
     return response.json ()
 })
-.then (function (data){
-    console.log(data)
+.then (function (info){
+    console.log(info)
     let genero = document.querySelector (".genero")
     let todoslosgeneros = []
-    for (let i = 1; i < data.data.length; i++){
+    for (let i = 1; i < info.data.length; i++){
         todoslosgeneros +=
         `<article>
-        <img src= "${data.data[i].picture}" alt="" />
-        <p>Name:  ${data.data[i].name}  </p>
+        <img src= "${info.data[i].picture}" alt="" />
+        <p>Name:  ${info.data[i].name}  </p>
         </article>`
     }
     genero.innerHTML= todoslosgeneros
