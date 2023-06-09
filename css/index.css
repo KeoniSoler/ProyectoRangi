@@ -1,20 +1,14 @@
 li{
     list-style: none;
 }
-body{
+.body{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+ 
 
 }
 
-.dark-mode {
-    background-color: #000000;
-    color: white;
-  }
+
   
 .header{
     font-family: Arial, Helvetica, sans-serif;
@@ -26,16 +20,20 @@ body{
     justify-content: space-around;
     align-items: center;
 }
-.nav{
+
+.nav a{
 padding: 10px 30px;
 text-decoration: none;
 }
+
+
 .form{
     width: 100px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    padding-bottom: 20px;
 }
 .logo-ringomusic{
     width: 250px;
@@ -141,12 +139,6 @@ a:visited{
     height: 180px;
     width: 180px;
 }
-.menu{
-    display: flex;
-    flex-direction: column;
-    margin: 30px 30px 30px 30px;
-    width: 130px;
-}
 .footer{
     color: burlywood;
     font-family: Arial, Helvetica, sans-serif;
@@ -188,4 +180,20 @@ align-items: center;
 }
 @media (min-width: 601px){
     
+}
+.dark-mode {
+    background-color: #000000;
+    color: white;
+    padding-top: 5px;
+    border-radius: 60px; 
+  }
+.modonoche{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.tituloModonoche{
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
 }
