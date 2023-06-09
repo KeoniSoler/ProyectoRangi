@@ -11,7 +11,7 @@ li{
 
   
 .header{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Rowdies', cursive;
     text-align: center;
     color: burlywood;
     display: flex;
@@ -71,7 +71,7 @@ a:visited{
 }
 .CancionTitulo{
     color: burlywood;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Rowdies', cursive;
 }
 .canciones{
     display: flex;
@@ -86,7 +86,7 @@ a:visited{
     margin: 15px;
     border: 3px solid rgb(195, 159, 111);
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Rowdies', cursive;
 }
 .CoverCancion{
     height: 180px;
@@ -95,7 +95,7 @@ a:visited{
 
 .ArtistasTitulo{
     color: burlywood;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Rowdies', cursive;
 }
 .artistas{
     display: flex;
@@ -118,7 +118,7 @@ a:visited{
 }
 .AlbumesTitulo{
     color: burlywood;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Rowdies', cursive;
 }
 .albumes{
     display: flex;
@@ -141,7 +141,7 @@ a:visited{
 }
 .footer{
     color: burlywood;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Rowdies', cursive;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -156,6 +156,7 @@ a:visited{
     font-size: small;
 }
 .titulogen{
+    color: burlywood;
 align-items: center;
 }
 .genero{
@@ -166,6 +167,7 @@ align-items: center;
     align-items: center;
 }
 .titulogart{
+    color: burlywood;
     align-items: center;
     }
 .artista{
