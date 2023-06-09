@@ -20,3 +20,14 @@ fetch (url)
     alert (error);
     console.log('Error:', error);
 })
+
+const checkbox = document.getElementById('dark-mode-checkbox');
+const body = document.body;
+
+checkbox.addEventListener('change', function () {
+  if (this.checked) {
+    body.classList.add('dark-mode');
+  } else {
+    body.classList.remove('dark-mode');
+  }
+});
