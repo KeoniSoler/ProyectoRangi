@@ -1,3 +1,4 @@
+ /* modo noche */
 let checkbox = document.getElementById('dark-mode-checkbox');
 let body = document.body;
 
@@ -8,3 +9,4 @@ checkbox.addEventListener('change', function () {
     body.classList.remove('dark-mode');
   }
 });
+ /* modo noche */
