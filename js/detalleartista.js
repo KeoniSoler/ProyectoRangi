@@ -1,4 +1,5 @@
-let url = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artists"
+let url = "https://cors-anywhere.herokuapp.com/"
+
 
 fetch (url)
 .then(function(response){
@@ -12,7 +13,7 @@ fetch (url)
         todoslosartistas +=
         `<article>
         <img src= "${info.data[i].picture_medium}" alt="" />
-        <p>Name:  ${info.data[i].name}  </p>
+        <p> ${info.data[i].name}  </p>
         </article>`
     }
     artista.innerHTML= todoslosartistas

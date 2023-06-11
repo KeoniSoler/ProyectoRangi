@@ -1,22 +1,22 @@
-let url = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artists"
+let url = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre"
 
 fetch (url)
 .then(function(response){
     return response.json ()
 })
-.then (function (data){
-    console.log(data.data)
-    let artistas = document.querySelector (".artistas")
-    let listaartistas = []
-    for (let i = 1; i < data.data.length; i++){
-        listaartistas +=
+.then (function (info){
+    console.log(info.data)
+    let genero = document.querySelector (".genero")
+    let todoslosgeneros = []
+    for (let i = 1; i < info.data.length; i++){
+        todoslosgeneros +=
         `<article>
-        <img src= "${data.data[i].picture}" alt="" />
-        <p>Name:  ${data.data[i].name}  </p>
+        <img src= "${info.data[i].picture_medium}" alt="" />
+        <p> ${info.data[i].name}  </p>
         </article>`
     }
-    artistas.innerHTML= listaartistas
-    console.log(listaartistas);
+    genero.innerHTML= todoslosgeneros
+    console.log(todoslosgeneros);
 })
 .catch (function (error){
     alert (error)
