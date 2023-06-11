@@ -4,14 +4,13 @@ li{
 .body{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    font-family: 'Rowdies', cursive;
-
+    font-family: 'Signika', sans-serif;
 }
 
 
   
 .header{
-    font-family: 'Rowdies', cursive;
+    font-family: 'Signika', sans-serif;
     text-align: center;
     color: burlywood;
     display: flex;
@@ -71,7 +70,7 @@ a:visited{
 }
 .CancionTitulo{
     color: burlywood;
-    font-family: 'Rowdies', cursive;
+    font-family: 'Signika', sans-serif;
 }
 .canciones{
     display: flex;
@@ -86,8 +85,7 @@ a:visited{
     margin: 15px;
     border: 3px solid rgb(195, 159, 111);
     text-align: center;
-    font-family: 'Rowdies', cursive;
-}
+    font-family: 'Signika', sans-serif;}
 .CoverCancion{
     height: 180px;
     width: 180px;
@@ -95,8 +93,7 @@ a:visited{
 
 .ArtistasTitulo{
     color: burlywood;
-    font-family: 'Rowdies', cursive;
-}
+    font-family: 'Signika', sans-serif;}
 .artistas{
     display: flex;
     flex-wrap: wrap;
@@ -110,16 +107,14 @@ a:visited{
     margin: 15px;
     border: 3px solid  rgb(195, 159, 111);
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    font-family: 'Signika', sans-serif;}
 .CoverArtistas{
     height: 180px;
     width: 180px;
 }
 .AlbumesTitulo{
     color: burlywood;
-    font-family: 'Rowdies', cursive;
-}
+    font-family: 'Signika', sans-serif;}
 .albumes{
     display: flex;
     flex-wrap: wrap;
@@ -133,15 +128,14 @@ a:visited{
     margin: 15px;
     border: 3px solid  rgb(195, 159, 111);
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    font-family: 'Signika', sans-serif;}
 .CoverAlbumes{
     height: 180px;
     width: 180px;
 }
 .footer{
     color: burlywood;
-    font-family: 'Rowdies', cursive;
+    font-family: 'Signika', sans-serif;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -157,7 +151,7 @@ a:visited{
 }
 .titulogen{
     color: burlywood;
-align-items: center;
+    align-items: center;
 }
 .genero{
     display: flex;
