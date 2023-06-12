@@ -181,26 +181,34 @@ a:visited{
     justify-content: space-around;
     align-items: center;
 }
-@media (max-width: 600px){
-
+div.modonoche{
+    height: 30px;
 }
-@media (min-width: 601px){
-    
-}
-.dark-mode {
-    background-color: #000000;
-    color: white;
-    padding-top: 5px;
-    border-radius: 60px; 
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
   }
 .modonoche{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
-
-.tituloModonoche{
-    padding: 10px 10px 10px 10px;
-    margin: 10px;
+.musicanegro{
+    height: 70px;
+    width: 70px;
+    margin-right: 30px;
+    background-color: #00000000;
+    border: burlywood;
 }
+.fotonegro{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 600px){
 
+}
+@media (min-width: 601px){
+    
+}
