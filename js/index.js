@@ -28,6 +28,7 @@ fetch (urltracks)
         <img src= "${info.data[i].album.cover}" alt="" class="fototracks">
         <p> ${info.data[i].title}  </p>
         </a>
+        <p><a href="./detalleartista.html">${info.data[i].artist.name} </p>
         </article>`
     }
     tracks.innerHTML= todoslostracks
