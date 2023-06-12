@@ -47,11 +47,13 @@ fetch (urlartists)
     console.log(info.data)
     let artistas = document.querySelector (".artistas")
     let todoslosartistas = []
-    for (let i = 1; i < info.data.length; i++){
+    for (let i = 0; i < 5; i++){
         todoslosartistas +=
         `<article>
-        <img src= "${info.data[i].picture_medium}" alt="" />
+        <a href="./detalleartista.html?id=${info.data[i].id}">
+        <img src= "${info.data[i].picture}" alt="" class="fotoartistas">
         <p> ${info.data[i].name}  </p>
+        </a>
         </article>`
     }
     artistas.innerHTML= todoslosartistas
