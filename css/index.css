@@ -160,6 +160,30 @@ a:visited{
     align-items: center;
 }
 
+.artistas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tracks{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.albums{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .genero article{
     color: burlywood;
     background-color:  rgba(222, 184, 135, 0.152);
