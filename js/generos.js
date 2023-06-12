@@ -11,8 +11,10 @@ fetch (url)
     for (let i = 1; i < info.data.length; i++){
         todoslosgeneros +=
         `<article>
+        <a href="./detallegeneros.html?id=${info.data[i].id}">
         <img src= "${info.data[i].picture_medium}" alt="" />
         <p> ${info.data[i].name}  </p>
+        </a>
         </article>`
     }
     genero.innerHTML= todoslosgeneros

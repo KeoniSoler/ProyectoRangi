@@ -11,21 +11,23 @@
 
 //Api canciones
 
-let urlTracks = "https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/tracks"
+let urltracks = "https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/tracks"
 
-fetch (urlTracks)
+fetch (urltracks)
 .then(function(response){
     return response.json ()
 })
-.then (function (data){
-    console.log(data)
+.then (function (info){
+    console.log(info.data)
     let tracks = document.querySelector (".tracks")
     let todoslostracks = []
-    for (let i = 0; i < data.length; i++){
-        todoslostracks +=
+    for (let i = 0; i < 5; i++){
+      todoslostracks +=
         `<article>
-        <img src= "${data[i].artists.picture_medium}" alt="" />
-        <p> ${data[i].title}  </p>
+        <a href="./detalletrack.html?id=${info.data[i].id}">
+        <img src= "${info.data[i].album.cover}" alt="" class="fototracks">
+        <p> ${info.data[i].title}  </p>
+        </a>
         </article>`
     }
     tracks.innerHTML= todoslostracks
@@ -63,9 +65,9 @@ fetch (urlartists)
     alert (error)
 })
 
-//Api artistas
+//Api albums
 
-let urlalbums = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/albums"
+let urlalbums = "https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/albums"
 
 fetch (urlalbums)
 .then(function(response){
@@ -73,17 +75,19 @@ fetch (urlalbums)
 })
 .then (function (info){
     console.log(info.data)
-    let genero = document.querySelector (".albums")
-    let todoslosgeneros = []
-    for (let i = 1; i < info.data.length; i++){
-        todoslosgeneros +=
+    let albums = document.querySelector (".albums")
+    let todoslosalbums = []
+    for (let i = 0; i < 5; i++){
+      todoslosalbums +=
         `<article>
-        <img src= "${info.data[i].picture_medium}" alt="" />
-        <p> ${info.data[i].name}  </p>
+        <a href="./detallealbum.html?id=${info.data[i].id}">
+        <img src= "${info.data[i].cover}" alt="" class="fotoalbums">
+        <p> ${info.data[i].title}  </p>
+        </a>
         </article>`
     }
-    genero.innerHTML= todoslosgeneros
-    console.log(todoslosgeneros);
+    albums.innerHTML= todoslosalbums
+    console.log(todoslosalbums);
 })
 .catch (function (error){
     alert (error)
