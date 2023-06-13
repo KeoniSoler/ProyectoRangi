@@ -9,7 +9,7 @@
 
 //detalle tracks
 
-let urldettracks = "https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/tracks"
+let urldettracks = "https://api.allorigins.win/raw?url=https://developers.deezer.com/api/artist"
 
 fetch (urldettracks)
 .then(function(response){
