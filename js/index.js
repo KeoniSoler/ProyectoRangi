@@ -17,7 +17,7 @@ fetch (urltracks)
 .then(function(response){
     return response.json ()
 })
-.then (function (info){
+.then (function (   info){
     console.log(info.data)
     let tracks = document.querySelector (".tracks")
     let todoslostracks = []
@@ -28,7 +28,7 @@ fetch (urltracks)
         <img src= "${info.data[i].album.cover}" alt="" class="fototracks">
         <p> ${info.data[i].title}  </p>
         </a>
-        <p><a href="./detalleartista.html">${info.data[i].artist.name} </p>
+        <p><a href="./detalletrack.html?id=${info.data[i].id}">${info.data[i].artist.name}</a></p>
         </article>`
     }
     tracks.innerHTML= todoslostracks
@@ -56,7 +56,7 @@ fetch (urlartists)
         `<article>
         <a href="./detalleartista.html?id=${info.data[i].id}">
         <img src= "${info.data[i].picture}" alt="" class="fotoartistas">
-        <p> ${info.data[i].name}  </p>
+        <p><a href="./detalleartista.html?id=${info.data[i].id}">${info.data[i].name}</a></p>
         </a>
         </article>`
     }
@@ -84,7 +84,7 @@ fetch (urlalbums)
         `<article>
         <a href="./detallealbum.html?id=${info.data[i].id}">
         <img src= "${info.data[i].cover}" alt="" class="fotoalbums">
-        <p> ${info.data[i].title}  </p>
+        <p><a href="./detallealbum.html?id=${info.data[i].id}">${info.data[i].title}</a></p>
         </a>
         </article>`
     }
