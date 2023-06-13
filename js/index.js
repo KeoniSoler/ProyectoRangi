@@ -38,7 +38,8 @@ fetch (urltracks)
     alert (error)
 })
 
-//Api artistas
+let checkbox = document.getElementById('dark-mode-checkbox');
+let body = document.body;
 
 let urlartists = "https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/artists"
 
