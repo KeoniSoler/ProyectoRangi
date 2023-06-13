@@ -9,7 +9,7 @@
 
 //detalle tracks
 
-let urldettracks = "https://api.allorigins.win/raw?url=https://developers.deezer.com/api/artist"
+let urldettracks = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/"
 
 fetch (urldettracks)
 .then(function(response){
@@ -19,13 +19,13 @@ fetch (urldettracks)
     console.log(info.data)
     let dettrack = document.querySelector (".dettrack")
     let detailtracks = []
-    for (let i = 0; i < 5; i++){
+    for (let i = 0; i < info.data.length; i++){
         detailtracks +=
         `<article>
         <a href="./detalletrack.html?id=${info.data[i].id}">
         <img src= "${info.data[i].album.cover}" alt="" class="fototracks">
         <p> ${info.data[i].title}  </p>
-        <p> ${info.data[i].name}  </p>
+        <p> <a href="./detalletrack.html?id=${info.data[i].id}">${info.data[i].name} </a></p>
         </a>
         </article>`
     }
