@@ -1,4 +1,4 @@
-let urldeartista = "https://api.allorigins.win/raw?url=https://developers.deezer.com/api/artist"
+let urldeartista = "https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/artists"
 
 fetch (urldeartista)
 .then(function(response){
@@ -8,13 +8,13 @@ fetch (urldeartista)
     console.log(info.data)
     let detartista = document.querySelector (".detartista")
     let detailartista = []
-    for (let i = 0; i < 5; i++){
+    for (let i = 0; i <info.data.length; i++){
         detailartista +=
         `<article>
-        <a href="./detalletrack.html?id=${info.data[i].id}">
-        <img src= "${info.data[i].album.cover}" alt="" class="fotoartistas">
-        <p> ${info.data[i].title}  </p>
-        <p> ${info.data[i].name}  </p>
+        <a href="./detalleartista.html?id=${info.data[i].id}">
+        <img src= "${info.data[i].picture}" alt="" class="fotoartistas">
+        <p><a href="./detalleartista.html?id=${info.data[i].id}">${info.data[i].name}</a></p>
+        <p> ${info.data[i].tracklist}  </p>
         </a>
         </article>`
     }

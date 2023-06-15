@@ -9,7 +9,7 @@
 
 //detalle tracks
 
-let urldettracks = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/"
+let urldettracks = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}"
 
 fetch (urldettracks)
 .then(function(response){
