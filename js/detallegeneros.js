@@ -23,8 +23,8 @@ fetch(endpoint)
         let detgenre = document.querySelector(".detallegenero")
         let detalle =
             ` <li>  
-                <h2>${info.name}  </h2>
                 <img src= "${info.picture_medium}" alt='' />
+                <h2>${info.name}  </h2>
                 ${fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/genre/${ID}/artists`)
                 .then(function (response) {
                     return response.json()

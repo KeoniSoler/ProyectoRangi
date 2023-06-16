@@ -1,4 +1,4 @@
-let url = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre"
+let url = "https://cors-anywhere.herokuapp.com/http://api.deezer.com/genre"
 
 fetch (url)
 .then(function(response){
