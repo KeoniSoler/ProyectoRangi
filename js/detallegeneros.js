@@ -36,8 +36,8 @@ fetch(endpoint)
                     for (let i = 0; i < 10; i++) {
                         artistas += `<li>
         
-                        <a href="../Html/artistas.html?id=${info.data[i].id}"> <p> ${info.data[i].name}</p> </a>
-                        <a href="../Html/artistas.html?id=${info.data[i].id}"> <img class= "ftodetgen" src= "${info.data[i].picture_medium}" alt="" />   </a>
+                        <a href="./detalleartista.html?id=${info.data[i].id}"> <p> ${info.data[i].name}</p> </a>
+                        <a href="./detalleartista.html?id=${info.data[i].id}"> <img class= "ftodetgen" src= "${info.data[i].picture_medium}" alt="" />   </a>
                                 </li>`;
                               
                     }

@@ -70,68 +70,17 @@ a:visited{
     color: burlywood;
     font-family: 'Signika', sans-serif;
 }
-.canciones{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-   justify-content: space-between;
-}
-.cancionbox{
-    color: burlywood;
-    background-color: rgba(222, 184, 135, 0.152);
-    padding: 15px;
-    margin: 15px;
-    border: 3px solid rgb(195, 159, 111);
-    text-align: center;
-    font-family: 'Signika', sans-serif;}
 
-.CoverCancion{
-    height: 180px;
-    width: 180px;
-}
 
 .ArtistasTitulo{
     color: burlywood;
     font-family: 'Signika', sans-serif;}
-.artistas{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-   justify-content: space-between;
-}
-.artistasbox{
-    color: burlywood;
-    background-color:  rgba(222, 184, 135, 0.152);
-    padding: 15px;
-    margin: 15px;
-    border: 3px solid  rgb(195, 159, 111);
-    text-align: center;
-    font-family: 'Signika', sans-serif;}
-.CoverArtistas{
-    height: 180px;
-    width: 180px;
-}
+
 .AlbumesTitulo{
     color: burlywood;
     font-family: 'Signika', sans-serif;}
-.albumes{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-   justify-content: space-between;
-}
-.albumesbox{
-    color: burlywood;
-    background-color:  rgba(222, 184, 135, 0.152);
-    padding: 15px;
-    margin: 15px;
-    border: 3px solid  rgb(195, 159, 111);
-    text-align: center;
-    font-family: 'Signika', sans-serif;}
-.CoverAlbumes{
-    height: 180px;
-    width: 180px;
-}
+
+
 .footer{
     color: burlywood;
     font-family: 'Signika', sans-serif;
@@ -169,6 +118,19 @@ a:visited{
     font-family: 'Signika', sans-serif
 }
 
+.generoart{
+    display: block;
+    background-color:  rgba(222, 184, 135, 0.152);
+    border: 3px solid  rgb(195, 159, 111);
+    padding-right: 40px;
+   margin-left: 20px ;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+}
+
 .artistas{
     display: flex;
     flex-direction: row;
@@ -188,6 +150,13 @@ a:visited{
 .fotoartistas{
     height: 180px;
     width: 180px;
+}
+
+.artistasporgenero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .tracks{
     display: flex;
@@ -286,9 +255,16 @@ body.dark-mode {
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+.ftogenre{
+    height: 150px;
+    width: 150px;
+}
+
 @media (max-width: 600px){
 
 }
 @media (min-width: 601px){
     
 }
+

@@ -27,7 +27,7 @@ fetch(endpoint)
                     let albums = [];
                     for (let i = 0; i < 5; i++) {
                         albums += `<li>
-                        <a href="../Html/album.html?id=${info.data[i].id}"> <p class = "ptit"> ${i+1}: ${info.data[i].title}</p> </a>
+                        <a href=".detallealbum.html?id=${info.data[i].id}"> <p class = "ptit"> ${i+1}: ${info.data[i].title}</p> </a>
                                 
                                 </li>`;
                     }

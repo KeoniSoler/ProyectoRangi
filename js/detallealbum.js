@@ -27,7 +27,7 @@ fetch(endpoint)
                 for (let i=0; i < data.tracks.data.length ;i++){
                 songs +=`
                     <li>
-                    <a href="../Html/canciones.html?id=${data.tracks.data[i].id}"> <p> ${i}: ${data.tracks.data[i].title}  </p> </a>
+                    <a href="./detalletrack.html?id=${data.tracks.data[i].id}"> <p> ${i}: ${data.tracks.data[i].title}  </p> </a>
                     </li>`;
                 }
                 lista.innerHTML = songs
@@ -39,18 +39,6 @@ fetch(endpoint)
     .catch(function (error) {
         console.log(error);
     })
-
-    let indice = document.querySelectorAll(".navegadores");
-for (let i = 0; i < indice.length; i++) {
-    indice[i].addEventListener("mouseover", function() {
-      indice[i].style.color = "white";
-    });
-  }
-   for (let i = 0; i < indice.length; i++) {
-    indice[i].addEventListener("mouseout", function() {
-      indice[i].style.color = "black";
-    });
-  }
 
     /* modo noche */
  document.addEventListener("DOMContentLoaded", function() {
