@@ -9,29 +9,34 @@
 
 //detalle tracks
 
-let urldettracks = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}"
+let string = location.search
+let data = new URLSearchParams(string);
+let ID = data.get("id")
 
-fetch (urldettracks)
-.then(function(response){
-    return response.json ()
-})
-.then (function (info){
-    console.log(info.data)
-    let dettrack = document.querySelector (".dettrack")
-    let detailtracks = []
-    for (let i = 0; i < info.data.length; i++){
-        detailtracks +=
-        `<article>
-        <a href="./detalletrack.html?id=${info.data[i].id}">
-        <img src= "${info.data[i].album.cover}" alt="" class="fototracks">
-        <p> ${info.data[i].title}  </p>
-        <p> <a href="./detalletrack.html?id=${info.data[i].id}">${info.data[i].name} </a></p>
-        </a>
-        </article>`
-    }
-    dettrack.innerHTML= detailtracks
-    console.log(detailtracks);
-})
-.catch (function (error){
-    alert (error)
-})
+let endpoint = `https://api.allorigins.win/raw?url=https://api.deezer.com/track/${ID}`
+
+fetch(endpoint)
+    .then(function (response) {
+        return response.json()
+
+    })
+    .then(function (data) {
+        console.log(data);
+        let detcancion = document.querySelector(".detalletrack")
+        let detalle =
+            ` <li>  
+            <a href="../Html/artistas.html?id=${data.artist.id}"> 
+            <img src= "${data.album.cover_medium}" alt='' />
+            <p> Titulo: ${data.title}  </p>
+            <p> Artista: ${data.artist.name} </p> </a>
+                <a href="../Html/album.html?id=${data.album.id}">   
+                <p> Album: ${data.album.title}  </p>
+                <button class = "btnply"> + Playlists </button>
+                </a>
+             </li>`;
+
+        detcancion.innerHTML = detalle
+    })
+    .catch(function (error) {
+        console.log(error);
+    })

@@ -258,6 +258,34 @@ body.dark-mode {
     display: flex;
     justify-content: center;
 }
+.detartista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.lista5albumes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.detalbum{
+    display: flex;
+    flex-direction: row;
+}
+.cancionesalbumes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.detgenero{
+    display: flex;
+    flex-direction: row;
+}
+.detallegenero{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 @media (max-width: 600px){
 
 }

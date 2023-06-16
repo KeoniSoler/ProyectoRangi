@@ -1,29 +1,48 @@
-let urldeartista = "https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/artists"
+let string = location.search
+let data = new URLSearchParams(string);
+let ID = data.get("id")
 
-fetch (urldeartista)
-.then(function(response){
-    return response.json ()
-})
-.then (function (info){
-    console.log(info.data)
-    let detartista = document.querySelector (".detartista")
-    let detailartista = []
-    for (let i = 0; i <info.data.length; i++){
-        detailartista +=
-        `<article>
-        <a href="./detalleartista.html?id=${info.data[i].id}">
-        <img src= "${info.data[i].picture}" alt="" class="fotoartistas">
-        <p><a href="./detalleartista.html?id=${info.data[i].id}">${info.data[i].name}</a></p>
-        <p> ${info.data[i].tracklist}  </p>
-        </a>
-        </article>`
-    }
-    detartista.innerHTML= detailartista
-    console.log(detailartista);
-})
-.catch (function (error){
-    alert (error)
-})
+let endpoint = `https://api.allorigins.win/raw?url=https://api.deezer.com/artist/${ID}`
+
+fetch(endpoint)
+    .then(function (response) {
+        return response.json()
+
+    })
+    .then(function (info) {
+        console.log(info);
+        let detartista = document.querySelector(".detalleartista")
+        let detalleart =
+            ` <li>  
+                <img src= "${info.picture_medium}" alt='' />
+                <p>${info.name}  </p>
+                ${fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/artist/${ID}/albums`)
+                .then(function (response) {
+                    return response.json()
+
+                })
+                .then(function (info) {
+                    console.log(info);
+                    let listaalbum = document.querySelector(".5album")
+                    let albums = [];
+                    for (let i = 0; i < 5; i++) {
+                        albums += `<li>
+                        <a href="../Html/album.html?id=${info.data[i].id}"> <p class = "ptit"> ${i+1}: ${info.data[i].title}</p> </a>
+                                
+                                </li>`;
+                    }
+
+                    listaalbum.innerHTML = albums
+
+                })
+            } 
+             </li>`;
+
+             detartista.innerHTML = detalleart
+    })
+    .catch(function (error) {
+        console.log(error);
+    })
 
   /* modo noche */
   document.addEventListener("DOMContentLoaded", function() {
