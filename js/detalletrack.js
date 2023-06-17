@@ -27,10 +27,10 @@ fetch(endpoint)
             ` <li class="detailtrack">  
             <a href="./detalleartista.html?id=${data.artist.id}"> 
             <img src= "${data.album.cover_medium}" alt='' />
-            <p> Song: ${data.title}  </p>
+            <p> Titulo: ${data.title}  </p>
             <p> Artista: ${data.artist.name} </p> </a>
                 <a href="./detallealbum.html?id=${data.album.id}">   <p> Album: ${data.album.title}  </p> </a>
-                <button class = "btnFavs"> Agregar canción a favoritos </button>
+                <button class="btnFavs"><a href="./playlists.html?id=${data.album.id}"> Agregar a Playlist </a></button>
              </li>`;
 
         detcancion.innerHTML = detalle
@@ -38,6 +38,3 @@ fetch(endpoint)
     .catch(function (error) {
         console.log(error);
     })
-
-
-

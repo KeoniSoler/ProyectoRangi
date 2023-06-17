@@ -22,11 +22,11 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${bus
       console.log(data);
 
       for (let i = 0; i < data.data.length; i++) {
-         contenido += `<article class="resultados">
-                        <img src="${data.data[i].album.cover_medium}" alt="">
-                        <p class="resultados"><a href="detalle-cancion.html?id=${data.data[i].id}"> ${data.data[i].title} </a></p>
-                        
-                     </article>`
+         contenido += 
+         `<article>
+         <p><a href="./detalletrack.html?id=${data.data[i].id}"> ${data.data[i].title} </a></p>   
+          <img src="${data.data[i].album.cover_medium}" alt="">  
+         </article>`
       }
       resultados.innerHTML += contenido
       if (data.data.length == 0) {

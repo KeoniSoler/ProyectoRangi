@@ -16,8 +16,8 @@ fetch(endpoint)
             ` <li>  
             <img src= "${data.cover_medium}" alt='' />
             <p> Album: ${data.title}  </p>
-            <a href="./html/detalleartista.html?id=${data.artist.id}"> <p> Artista: ${data.artist.name}  </p> </a>
-            <a href="../Html/detallegeneros.html?id=${data.genre_id}"><p> Genero: ${data.genres.data[0].name}  </p>
+            <a href="./detalleartista.html?id=${data.artist.id}"> <p> Artista: ${data.artist.name}  </p> </a>
+            <a href="./detallegeneros.html?id=${data.genre_id}"><p> Genero: ${data.genres.data[0].name}  </p>
             <p> Fecha de Lanzamiento: ${data.release_date}  </p>
                 </li>`
 
